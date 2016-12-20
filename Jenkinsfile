@@ -1,4 +1,4 @@
-properties([pipelineTriggers([cron('* * * * *')])]) // run every minute
+properties([overrideIndexTriggers(false)]) // run every minute
 
 timestamps 
 {
